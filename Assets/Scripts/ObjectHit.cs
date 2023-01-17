@@ -33,7 +33,7 @@ public class ObjectHit : MonoBehaviour
         lastHitTime = Time.time;
       }
 
-      GetComponent<MeshRenderer>().material.color = Color.magenta;
+      GetComponent<MeshRenderer>().material.color = Color.red;
       gameObject.tag = "Hit";
     }
   }

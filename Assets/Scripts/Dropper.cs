@@ -32,4 +32,12 @@ public class Dropper : MonoBehaviour
       Debug.Log(timeToWait + " seconds has elapsed");
     }
   }
+
+  private void OnCollisionEnter(Collision collision)
+  {
+    if( collision.gameObject.tag == "Ground" )
+    {
+      dropperRigidbody.mass = 100;
+    }
+  }
 }
